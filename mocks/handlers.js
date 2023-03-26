@@ -6,6 +6,10 @@ export const handlers = [
     return res(ctx.json(users));
   }),
 
+  rest.get("/api/login", (req, res, ctx) => {
+    return res(ctx.json({ token: "fake_user_token" }));
+  }),
+
   // rest.get("/users/:id/messages", (req, res, ctx) => {
   //   return res(ctx.json(messages));
   // }),

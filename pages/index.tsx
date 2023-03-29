@@ -1,12 +1,13 @@
-import Login from "@/components/Login";
+import GabeDashboard from "@/components/GabeDashboard";
+// import Login from "@/components/Login";
 import Head from "next/head";
 
 export default function Home() {
-  function onBtnClick() {
-    fetch("/api/users")
-      .then((res) => res.json())
-      .then((data) => console.log(data));
-  }
+  // function onBtnClick() {
+  //   fetch("/api/users")
+  //     .then((res) => res.json())
+  //     .then((data) => console.log(data));
+  // }
 
   return (
     <>
@@ -17,7 +18,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Login />
+        {/* <Login /> */}
+        <GabeDashboard />
       </main>
     </>
   );
